@@ -1,0 +1,115 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-09 13:54:47.486964",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_aplw",
+  "amended_from",
+  "event_name",
+  "start_time",
+  "google_meet_link",
+  "column_break_vbjo",
+  "end_time",
+  "event_id",
+  "join_meet",
+  "section_break_fgms",
+  "event_participants"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_aplw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Google Event",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "event_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Event Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Start Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "google_meet_link",
+   "fieldtype": "Data",
+   "label": "Google Meet Link"
+  },
+  {
+   "fieldname": "column_break_vbjo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "End Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "event_id",
+   "fieldtype": "Data",
+   "label": "Event ID"
+  },
+  {
+   "fieldname": "join_meet",
+   "fieldtype": "Button",
+   "label": "Join Meet"
+  },
+  {
+   "fieldname": "section_break_fgms",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "event_participants",
+   "fieldtype": "Table",
+   "label": "Event Participants",
+   "options": "Participants"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-11-09 14:01:13.496751",
+ "modified_by": "Administrator",
+ "module": "Calendererpnext",
+ "name": "Google Event",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
