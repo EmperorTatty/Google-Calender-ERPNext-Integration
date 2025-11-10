@@ -6,7 +6,6 @@
  "engine": "InnoDB",
  "field_order": [
   "section_break_aplw",
-  "amended_from",
   "event_name",
   "start_time",
   "google_meet_link",
@@ -23,19 +22,10 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Google Event",
-   "print_hide": 1,
-   "read_only": 1,
-   "search_index": 1
-  },
-  {
    "fieldname": "event_name",
    "fieldtype": "Data",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Event Name",
    "reqd": 1
   },
@@ -43,13 +33,15 @@
    "fieldname": "start_time",
    "fieldtype": "Datetime",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Start Time",
    "reqd": 1
   },
   {
    "fieldname": "google_meet_link",
    "fieldtype": "Data",
-   "label": "Google Meet Link"
+   "label": "Google Meet Link",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_vbjo",
@@ -59,13 +51,15 @@
    "fieldname": "end_time",
    "fieldtype": "Datetime",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "End Time",
    "reqd": 1
   },
   {
    "fieldname": "event_id",
    "fieldtype": "Data",
-   "label": "Event ID"
+   "label": "Event ID",
+   "read_only": 1
   },
   {
    "fieldname": "join_meet",
@@ -85,9 +79,8 @@
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
- "is_submittable": 1,
  "links": [],
- "modified": "2025-11-09 14:01:13.496751",
+ "modified": "2025-11-10 08:50:53.687445",
  "modified_by": "Administrator",
  "module": "Calendererpnext",
  "name": "Google Event",
@@ -103,7 +96,6 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
-   "submit": 1,
    "write": 1
   }
  ],
