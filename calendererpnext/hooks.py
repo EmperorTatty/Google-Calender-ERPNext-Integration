@@ -148,7 +148,7 @@ app_license = "mit"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
+scheduler_events = {
 # 	"all": [
 # 		"calendererpnext.tasks.all"
 # 	],
@@ -161,10 +161,13 @@ app_license = "mit"
 # 	"weekly": [
 # 		"calendererpnext.tasks.weekly"
 # 	],
+    "weekly": [
+        "calendererpnext.services.rest.setup_google_watch"
+    ]
 # 	"monthly": [
 # 		"calendererpnext.tasks.monthly"
 # 	],
-# }
+}
 
 # Testing
 # -------
